@@ -1,4 +1,4 @@
-# Video Sharing Platform — Reference System Design
+# Video Streaming Platform — Video Sharing System Design: Uploads, Transcoding, HLS and CDN
 
 [![CI](https://github.com/shivkumarsinghsky/video-streaming-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/shivkumarsinghsky/video-streaming-platform/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
