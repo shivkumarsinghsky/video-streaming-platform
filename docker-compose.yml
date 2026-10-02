@@ -1,0 +1,13 @@
+# Prototype API with a local directory standing in for object storage. docker compose up -d --build
+# Set CDN_SIGNING_SECRET in your shell or a local .env file (never commit it); a dev default is used otherwise.
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      CDN_SIGNING_SECRET: ${CDN_SIGNING_SECRET:-dev-only-secret}
+    ports: ["${API_PORT:-8000}:8000"]
+    volumes: ["media:/data"]
+volumes:
+  media:
